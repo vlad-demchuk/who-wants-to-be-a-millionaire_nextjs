@@ -34,6 +34,21 @@
   background-image: url("/images/hover-opt-mobile.svg");
 }
 
+.selected,
+.selected:hover {
+  background-image: url("/images/selected-opt-mobile.svg");
+}
+
+.correct,
+.correct:hover {
+  background-image: url("/images/correct-opt-mobile.svg");
+}
+
+.wrong,
+.wrong:hover {
+  background-image: url("/images/wrong-opt-mobile.svg");
+}
+
 .id {
   margin-right: 8px;
   color: var(--orange-100);
@@ -78,7 +93,7 @@
 
     font-size: 20px;
 
-    background-image: url("/images/inactive-opt-desktop.svg.svg");
+    background-image: url("/images/inactive-opt-desktop.svg");
   }
 
   .option:hover {
@@ -86,5 +101,20 @@
     height: 72px;
 
     background-image: url("/images/hover-opt-desktop.svg");
+  }
+
+  .selected,
+  .selected:hover {
+    background-image: url("/images/selected-opt-desktop.svg");
+  }
+
+  .correct,
+  .correct:hover {
+    background-image: url("/images/correct-opt-desktop.svg");
+  }
+
+  .wrong,
+  .wrong:hover {
+    background-image: url("/images/wrong-opt-desktop.svg");
   }
 }

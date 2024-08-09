@@ -5,15 +5,15 @@ import React, { createContext, Dispatch, useState } from 'react';
 interface Progress {
   currentStage: number,
   setCurrentStage: Dispatch<number>,
-  prize: number,
-  setPrize: Dispatch<number>
+  isGameOver: boolean
+  setIsGameOver: Dispatch<boolean>,
 }
 
 export const ProgressContext = createContext<Progress>({
   currentStage: 1,
   setCurrentStage: () => {},
-  prize: 0,
-  setPrize: () => {},
+  isGameOver: false,
+  setIsGameOver: () => {},
 });
 
 export default function ProgressProvider({
@@ -22,13 +22,13 @@ export default function ProgressProvider({
   children: React.ReactNode
 }) {
   const [currentStage, setCurrentStage] = useState(1);
-  const [prize, setPrize] = useState(0);
+  const [isGameOver, setIsGameOver] = useState(false);
 
   const value = {
     currentStage,
     setCurrentStage,
-    prize,
-    setPrize,
+    isGameOver,
+    setIsGameOver,
   };
 
   return <ProgressContext.Provider value={value}>

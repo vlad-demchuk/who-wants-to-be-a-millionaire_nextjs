@@ -1,3 +1,5 @@
+'use client';
+
 import clsx from 'clsx';
 import MenuToggle from '@/components/game/menu-toggle';
 import { useContext } from 'react';
@@ -10,7 +12,7 @@ export default function PrizeSidebar({ active }: { active: boolean }) {
   const formattedStages = stages.slice(1).toReversed();
 
   return (
-    <section className={clsx(styles.prizeSidebar, active && styles.sidebarOpen)}>
+    <aside className={clsx(styles.prizeSidebar, active && styles.sidebarOpen)}>
       <MenuToggle action="close" />
 
       <ul className={styles.prizeList}>
@@ -25,6 +27,6 @@ export default function PrizeSidebar({ active }: { active: boolean }) {
           >{stage.prize}</li>
         ))}
       </ul>
-    </section>
+    </aside>
   );
 }

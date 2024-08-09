@@ -1,12 +1,14 @@
 .container {
-  width: 100vw;
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 
-  background: linear-gradient(to bottom right, var(--white-100) 50%, var(--orange-5) 0);
-}
-
-.content {
   padding-inline: 16px;
+
+  background-color: var(--black-5);
 }
 
 .image {
@@ -15,22 +17,30 @@
   width: 288px;
   height: 192px;
 
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
-.title {
+.score {
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+
+  opacity: 50%;
+}
+
+.earned {
   margin-bottom: 102px;
 
-  color: var(--black-100);
   font-size: 32px;
   font-weight: 600;
-  line-height: 37.12px;
+  line-height: 37px;
   text-align: center;
 }
 
-.link {
-  display: block;
-
+.button {
   width: 288px;
   height: 48px;
 }
@@ -54,15 +64,24 @@
     margin-bottom: 0;
   }
 
-  .title {
+  .score {
+    align-self: flex-start;
+
+    font-size: 32px;
+    line-height: 37px;
+    text-align: left;
+  }
+
+  .earned {
+    align-self: flex-start;
+
     margin-bottom: 64px;
 
     font-size: 56px;
     line-height: 65px;
-    text-align: left;
   }
 
-  .link {
+  .button {
     align-self: flex-start;
 
     width: 296px;

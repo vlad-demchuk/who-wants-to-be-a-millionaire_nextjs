@@ -1,5 +1,6 @@
 .menuOpener {
   position: absolute;
+  top: 21px;
   right: 20px;
 
   padding: 0;
@@ -9,7 +10,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .menuOpener {
     display: none;
   }

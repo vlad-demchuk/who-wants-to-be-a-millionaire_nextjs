@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import styles from '@/styles/game/game.module.css';
 import MenuToggle from '@/components/game/menu-toggle';

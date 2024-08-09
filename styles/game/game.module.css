@@ -2,8 +2,10 @@
   position: relative;
 
   width: 100vw;
+  max-width: 1700px;
   height: 100vh;
 
+  margin: 0 auto;
   padding: 21px 0 24px;
 
   background-color: var(--black-5);
