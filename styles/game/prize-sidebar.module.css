@@ -1,0 +1,97 @@
+.prizeSidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  transform: translateX(-100%);
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 21px;
+
+  background-color: var(--black-5);
+
+  transition: transform 0.2s
+}
+
+.sidebarOpen {
+  transform: translateX(0);
+}
+
+.prizeList {
+  margin-top: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.prize {
+  width: 320px;
+  height: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  background-image: url("/images/inactive-prize-step-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.active {
+  color: var(--orange-100);
+  background-image: url("/images/current-prize-step-mobile.svg");
+}
+
+.inactive {
+  color: var(--black-40);
+
+  background-image: url("/images/inactive-prize-step-mobile.svg");
+}
+
+@media (min-width: 1280px) {
+  .prizeSidebar {
+    position: static;
+    transform: translateX(0);
+
+    width: 376px;
+    height: 100%;
+
+    padding: 0;
+
+    background-color: var(--white-100);
+  }
+
+  .prizeList {
+    width: 100%;
+
+    margin-top: 166px;
+  }
+
+  .prize {
+    width: 376px;
+    height: 40px;
+
+    font-size: 20px;
+    line-height: 23px;
+
+    background-image: url("/images/inactive-prize-step-desktop.svg");
+  }
+
+  .active {
+    background-image: url("/images/current-prize-step-desktop.svg");
+  }
+
+  .inactive {
+    background-image: url("/images/inactive-prize-step-desktop.svg");
+  }
+}

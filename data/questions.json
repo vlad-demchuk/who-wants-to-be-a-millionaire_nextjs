@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "What does the word loquacious mean?",
+    "options": ["Angry", "Beautiful", "Chatty", "Shy"],
+    "answer": "Chatty"
+  },
+  {
+    "id": 2,
+    "title": "What sort of animal is Walt Disney's Dumbo?",
+    "options": ["Deer", "Rabbit", "Elephant", "Donkey"],
+    "answer": "Elephant"
+  },
+  {
+    "id": 3,
+    "title": "Which two words traditionally appear onscreen at the termination of a feature film?",
+    "options": ["The End", "The Conclusion", "The Finish", "The Pizza Rolls Are Done"],
+    "answer": "The End"
+  },
+  {
+    "id": 4,
+    "title": "Where did Scotch whisky originate?",
+    "options": ["Wales", "Scotland", "The United States", "Sydney"],
+    "answer": "Scotland"
+  },
+  {
+    "id": 5,
+    "title": "A magnet would most likely attract which of the following?",
+    "options": ["Plastic", "Wood", "The wrong man", "Metal"],
+    "answer": "Metal"
+  },
+  {
+    "id": 6,
+    "title": "At a restaurant, someone who 'foots the bill' does what?",
+    "options": ["Kisses it", "Pays it", "Hopes to get lucky", "Rips it up"],
+    "answer": "Pays it"
+  },
+  {
+    "id": 7,
+    "title": "How many seconds are in a minute?",
+    "options": ["30", "1", "100", "60"],
+    "answer": "60"
+  },
+  {
+    "id": 8,
+    "title": "What city contains the Eiffel Tower?",
+    "options": ["Paris", "New York City", "Los Angeles", "Sydney"],
+    "answer": "Paris"
+  },
+  {
+    "id": 9,
+    "title": "Which sport is also known as football?",
+    "options": ["Basketball", "Baseball", "Soccer", "Cricket"],
+    "answer": "Soccer"
+  },
+  {
+    "id": 10,
+    "title": "Who wasn't a member of the Beatles?",
+    "options": ["John Lennon", "Paul McCartney", "Ringo Star", "Justin Timberlake"],
+    "answer": "Justin Timberlake"
+  },
+  {
+    "id": 11,
+    "title": "Which of the following is not a type of pasta?",
+    "options": ["Spaghetti", "Escargot", "Fettuccine", "Ziti"],
+    "answer": "Escargot"
+  },
+  {
+    "id": 12,
+    "title": "Which of these lazy animals sleeps up to 22 hours a day?",
+    "options": ["Koala", "Lion", "Copperhead", "Beagle"],
+    "answer": "Koala"
+  }
+]

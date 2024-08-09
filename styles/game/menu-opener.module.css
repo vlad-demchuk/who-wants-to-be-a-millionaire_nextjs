@@ -1,0 +1,16 @@
+.menuOpener {
+  position: absolute;
+  right: 20px;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .menuOpener {
+    display: none;
+  }
+}
