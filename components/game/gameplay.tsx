@@ -1,13 +1,13 @@
 'use client';
 
-import styles from '@/styles/game/gameplay.module.css';
-import { useContext, useState } from 'react';
-import { ProgressContext } from '@/contexts/progress-context';
+import { useState } from 'react';
+import clsx from 'clsx';
+import { useProgressContext } from '@/contexts/progress-context';
+import GameOver from '@/components/game/game-over';
 import questions from '@/data/questions.json';
 import { DELAY_BEFORE_CHECK, DELAY_BEFORE_NEXT_STEP, LETTERS } from '@/lib/constants';
-import GameOver from '@/components/game/game-over';
-import clsx from 'clsx';
 import { validateOption } from '@/lib/utils';
+import styles from '@/styles/game/gameplay.module.css';
 
 export default function Gameplay() {
   const {
@@ -15,7 +15,7 @@ export default function Gameplay() {
     setCurrentStage,
     isGameOver,
     setIsGameOver,
-  } = useContext(ProgressContext);
+  } = useProgressContext();
   const [selectedOption, setSelectedOption] = useState('');
   const [isAnswerShown, setIsAnswerShown] = useState(false);
 

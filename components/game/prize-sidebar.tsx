@@ -1,14 +1,13 @@
 'use client';
 
 import clsx from 'clsx';
+import { useProgressContext } from '@/contexts/progress-context';
 import MenuToggle from '@/components/game/menu-toggle';
-import { useContext } from 'react';
-import { ProgressContext } from '@/contexts/progress-context';
 import stages from '@/data/stages.json';
 import styles from '@/styles/game/prize-sidebar.module.css';
 
 export default function PrizeSidebar({ active }: { active: boolean }) {
-  const { currentStage } = useContext(ProgressContext);
+  const { currentStage } = useProgressContext();
   const formattedStages = stages.slice(1).toReversed();
 
   return (

@@ -2,14 +2,14 @@
 
 import React, { createContext, Dispatch, useState } from 'react';
 
-interface Progress {
+interface ProgressContext {
   currentStage: number,
   setCurrentStage: Dispatch<number>,
   isGameOver: boolean
   setIsGameOver: Dispatch<boolean>,
 }
 
-export const ProgressContext = createContext<Progress>({
+export const ProgressContext = createContext<ProgressContext>({
   currentStage: 1,
   setCurrentStage: () => {},
   isGameOver: false,
@@ -35,3 +35,14 @@ export default function ProgressProvider({
     {children}
   </ ProgressContext.Provider>;
 }
+
+// Custom hook to use the ProgressContext
+export const useProgressContext = () => {
+  const context = React.useContext(ProgressContext);
+
+  if (!context) {
+    throw new Error('useProgressContext must be used within a ProgressProvider');
+  }
+
+  return context;
+};

@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import styles from '@/styles/game/menu-toggle.module.css';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import styles from '@/styles/game/menu-toggle.module.css';
 
 export default function MenuToggle({ action }: { action: 'open' | 'close' }) {
   const pathname = usePathname();

@@ -1,6 +1,6 @@
-import styles from '@/styles/game/game-over.module.css';
 import Image from 'next/image';
 import stages from '@/data/stages.json';
+import styles from '@/styles/game/game-over.module.css';
 
 export default function GameOver({
   onTryAgainClick,
