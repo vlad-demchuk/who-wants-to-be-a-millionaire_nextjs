@@ -45,7 +45,7 @@
   height: 48px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .content {
     flex-direction: row;
 

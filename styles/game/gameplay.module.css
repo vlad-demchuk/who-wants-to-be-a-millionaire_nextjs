@@ -28,24 +28,19 @@
   background-size: cover;
 
   cursor: pointer;
+
+  transition: background-image var(--increased-delay);
 }
 
-.option:hover {
-  background-image: url("/images/hover-opt-mobile.svg");
-}
-
-.selected,
-.selected:hover {
+.selected {
   background-image: url("/images/selected-opt-mobile.svg");
 }
 
-.correct,
-.correct:hover {
+.correct {
   background-image: url("/images/correct-opt-mobile.svg");
 }
 
-.wrong,
-.wrong:hover {
+.wrong {
   background-image: url("/images/wrong-opt-mobile.svg");
 }
 
@@ -54,13 +49,32 @@
   color: var(--orange-100);
 }
 
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .question {
+    margin-bottom: 160px;
+  }
+
+  .optionsList {
+    width: max-content;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+  }
+}
+
 @media (min-width: 1280px) {
   .container {
     height: 100%;
     max-height: 820px;
 
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
   }
 
@@ -75,12 +89,6 @@
   }
 
   .optionsList {
-    width: max-content;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 0;
-
     margin-left: 80px;
     margin-bottom: 122px;
   }

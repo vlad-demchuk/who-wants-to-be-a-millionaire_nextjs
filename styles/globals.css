@@ -1,3 +1,13 @@
+/*
+Since CSS variable are not available in media queries,
+please, use the following breakpoints:
+  sm	640px	@media (min-width: 640px) { ... }
+  md	768px	@media (min-width: 768px) { ... }
+  lg	1024px	@media (min-width: 1024px) { ... }
+  xl	1280px	@media (min-width: 1280px) { ... }
+  2xl	1536px	@media (min-width: 1536px) { ... }
+*/
+
 :root {
   --white-100: #fff;
   --black-5: #f5f5f7;
@@ -8,7 +18,8 @@
   --orange-100: #ff8b37;
   --orange-120: #e87928;
 
-  --lg: 992px;
+  --default-delay: 0.2s;
+  --increased-delay: 0.4s;
 }
 
 .flex-center {
@@ -34,6 +45,8 @@
   border: 0;
   border-radius: 8px;
   cursor: pointer;
+
+  transition: background-color var(--default-delay);
 }
 
 .button:hover {

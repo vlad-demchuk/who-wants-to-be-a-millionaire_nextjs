@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .menuOpener {
     display: none;
   }

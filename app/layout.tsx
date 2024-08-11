@@ -5,8 +5,12 @@ import '@/styles/globals.css';
 import ProgressProvider from '@/contexts/progress-context';
 
 export const metadata: Metadata = {
-  title: 'Millionaire',
-  description: '',
+  title: {
+    template: '%s | Millionaire',
+    default: 'Millionaire',
+  },
+  description: '“Test your knowledge in ‘Who Wants to Be a Millionaire,’ the classic quiz game. Answer challenging'
+    + ' questions, use lifelines, and climb the money ladder to win virtual fortunes. Can you reach the million?”',
 };
 
 export default function RootLayout({

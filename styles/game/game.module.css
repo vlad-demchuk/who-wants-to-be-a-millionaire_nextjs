@@ -11,7 +11,7 @@
   background-color: var(--black-5);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .container {
     display: flex;
     justify-content: space-around;

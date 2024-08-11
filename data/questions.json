@@ -1,74 +1,74 @@
 [
   {
     "id": 1,
-    "title": "What does the word loquacious mean?",
-    "options": ["Angry", "Beautiful", "Chatty", "Shy"],
-    "answer": "Chatty"
+    "title": "What is the color of the sky on a clear day?",
+    "options": ["Blue", "Green", "Red", "Purple"],
+    "answers": ["Blue"]
   },
   {
     "id": 2,
-    "title": "What sort of animal is Walt Disney's Dumbo?",
-    "options": ["Deer", "Rabbit", "Elephant", "Donkey"],
-    "answer": "Elephant"
+    "title": "Which animal is known for having a long trunk?",
+    "options": ["Elephant", "Giraffe", "Lion", "Crocodile"],
+    "answers": ["Elephant"]
   },
   {
     "id": 3,
-    "title": "Which two words traditionally appear onscreen at the termination of a feature film?",
-    "options": ["The End", "The Conclusion", "The Finish", "The Pizza Rolls Are Done"],
-    "answer": "The End"
+    "title": "What is the capital of France?",
+    "options": ["London", "Berlin", "Madrid", "Paris"],
+    "answers": ["Paris"]
   },
   {
     "id": 4,
-    "title": "Where did Scotch whisky originate?",
-    "options": ["Wales", "Scotland", "The United States", "Sydney"],
-    "answer": "Scotland"
+    "title": "Which of these planets is closest to the Sun?",
+    "options": ["Venus", "Mars", "Mercury", "Earth"],
+    "answers": ["Mercury"]
   },
   {
     "id": 5,
-    "title": "A magnet would most likely attract which of the following?",
-    "options": ["Plastic", "Wood", "The wrong man", "Metal"],
-    "answer": "Metal"
+    "title": "Which of these is a primary color?",
+    "options": ["Red", "Green", "Purple", "Yellow"],
+    "answers": ["Red", "Yellow"]
   },
   {
     "id": 6,
-    "title": "At a restaurant, someone who 'foots the bill' does what?",
-    "options": ["Kisses it", "Pays it", "Hopes to get lucky", "Rips it up"],
-    "answer": "Pays it"
+    "title": "Which of these elements is a noble gas?",
+    "options": ["Oxygen", "Nitrogen", "Helium", "Carbon", "Neon", "Hydrogen"],
+    "answers": ["Helium", "Neon"]
   },
   {
     "id": 7,
-    "title": "How many seconds are in a minute?",
-    "options": ["30", "1", "100", "60"],
-    "answer": "60"
+    "title": "In which year did the Titanic sink?",
+    "options": ["1912", "1922", "1905", "1931"],
+    "answers": ["1912"]
   },
   {
     "id": 8,
-    "title": "What city contains the Eiffel Tower?",
-    "options": ["Paris", "New York City", "Los Angeles", "Sydney"],
-    "answer": "Paris"
+    "title": "Which of these languages is written from right to left?",
+    "options": ["English", "Arabic", "Chinese", "Hebrew", " Ukrainian", "Spanish"],
+    "answers": ["Arabic", "Hebrew"]
   },
   {
     "id": 9,
-    "title": "Which sport is also known as football?",
-    "options": ["Basketball", "Baseball", "Soccer", "Cricket"],
-    "answer": "Soccer"
+    "title": "Which of these animals are mammals?",
+    "options": ["Whale", "Dolphin", "Shark", "Frog", "Octopus", "Bat"],
+    "answers": ["Whale", "Dolphin", "Bat"]
   },
   {
     "id": 10,
-    "title": "Who wasn't a member of the Beatles?",
-    "options": ["John Lennon", "Paul McCartney", "Ringo Star", "Justin Timberlake"],
-    "answer": "Justin Timberlake"
+    "title": "Who painted the Mona Lisa?",
+    "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+    "answers": ["Leonardo da Vinci"]
   },
   {
     "id": 11,
-    "title": "Which of the following is not a type of pasta?",
-    "options": ["Spaghetti", "Escargot", "Fettuccine", "Ziti"],
-    "answer": "Escargot"
+    "title": "Which of these are types of clouds?",
+    "options": ["Cumulus", "Stratus", "Cirrus", "Nimbus", "Altostratus", "Nimbus"],
+    "answers": ["Cumulus", "Stratus", "Cirrus"]
   },
   {
     "id": 12,
-    "title": "Which of these lazy animals sleeps up to 22 hours a day?",
-    "options": ["Koala", "Lion", "Copperhead", "Beagle"],
-    "answer": "Koala"
+    "title": "Does Vlad Demchuk match the open position at your company?",
+    "options": ["Of course!", "Definitely!", "100%", "Undoubtedly!"],
+    "answers": ["Of course!", "Definitely!", "100%", "Undoubtedly!"]
   }
 ]

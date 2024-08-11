@@ -7,6 +7,7 @@ import questions from '@/data/questions.json';
 import { DELAY_BEFORE_CHECK, DELAY_BEFORE_NEXT_STEP, LETTERS } from '@/lib/constants';
 import GameOver from '@/components/game/game-over';
 import clsx from 'clsx';
+import { validateOption } from '@/lib/utils';
 
 export default function Gameplay() {
   const {
@@ -33,7 +34,7 @@ export default function Gameplay() {
     setTimeout(() => {
       setIsAnswerShown(true);
 
-      proceedNextStep(option === currentQuestion.answer);
+      proceedNextStep(validateOption(currentQuestion.answers, option));
     }, DELAY_BEFORE_CHECK);
   };
 
@@ -71,15 +72,19 @@ export default function Gameplay() {
     <section className={styles.container}>
       <p className={styles.question}>{currentQuestion.title}</p>
 
-      <ul className={styles.optionsList}>
+      <ul
+        key={currentQuestion.id}
+        className={styles.optionsList}
+      >
         {currentQuestion.options.map((option, i) => (
           <li
             key={option}
             className={clsx(
               styles.option,
               option === selectedOption && !isAnswerShown && styles.selected,
-              option === currentQuestion.answer && isAnswerShown && styles.correct,
-              option === selectedOption && isAnswerShown && selectedOption !== currentQuestion.answer && styles.wrong,
+              validateOption(currentQuestion.answers, option) && isAnswerShown && styles.correct,
+              option === selectedOption && isAnswerShown && !validateOption(currentQuestion.answers, option)
+              && styles.wrong,
             )}
             onClick={() => handleOptionClick(option)}
           >
