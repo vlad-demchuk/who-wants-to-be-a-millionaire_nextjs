@@ -22,12 +22,15 @@ export default function GameOver({
           />
         </div>
 
-        <div className={`flex-center`}>
+        <div className="flex-center">
           <p className={styles.score}>Total score:</p>
 
-          <p className={styles.earned}>{prizeCash} earned</p>
+          <p className={styles.earned}>
+            {`${prizeCash} earned`}
+          </p>
 
           <button
+            type="button"
             onClick={onTryAgainClick}
             className={`button ${styles.button}`}
           >

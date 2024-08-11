@@ -15,7 +15,7 @@ export default function PrizeSidebar({ active }: { active: boolean }) {
       <MenuToggle action="close" />
 
       <ul className={styles.prizeList}>
-        {formattedStages.map(stage => (
+        {formattedStages.map((stage) => (
           <li
             key={stage.id}
             className={clsx(
@@ -23,7 +23,9 @@ export default function PrizeSidebar({ active }: { active: boolean }) {
               currentStage === stage.id && styles.active,
               currentStage > stage.id && styles.inactive,
             )}
-          >{stage.prize}</li>
+          >
+            {stage.prize}
+          </li>
         ))}
       </ul>
     </aside>

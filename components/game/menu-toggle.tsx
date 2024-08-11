@@ -25,19 +25,20 @@ export default function MenuToggle({ action }: { action: 'open' | 'close' }) {
   return (
     <div>
       <button
+        type="button"
         className={styles.menuOpener}
         onClick={() => handleIconClick(!isActive)}
       >
         {action === 'open' ? (
           <Image
-            src={'/icons/menu-opener.svg'}
+            src="/icons/menu-opener.svg"
             alt="Open prize sidebar"
             width={14}
             height={14}
           />
         ) : (
           <Image
-            src={'/icons/menu-closer.svg'}
+            src="/icons/menu-closer.svg"
             alt="Close prize sidebar"
             width={14}
             height={14}

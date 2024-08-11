@@ -14,14 +14,18 @@ export default function RootPage() {
           />
         </div>
 
-        <div className={`flex-center`}>
-          <h1 className={styles.title}>Who wants to be<br /> a millionaire?</h1>
+        <div className="flex-center">
+          <h1 className={styles.title}>
+            Who wants to be
+            <br />
+            a millionaire?
+          </h1>
 
           <Link
             href="/game"
             className={styles.link}
           >
-            <button className="button">Start</button>
+            <button type="button" className="button">Start</button>
           </Link>
         </div>
       </div>

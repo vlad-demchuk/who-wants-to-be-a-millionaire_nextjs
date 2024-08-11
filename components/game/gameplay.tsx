@@ -62,36 +62,41 @@ export default function Gameplay() {
   };
 
   if (isWinner || isGameOver) {
-    return <GameOver
-      onTryAgainClick={handleTryAgainClick}
-      currentStage={currentStage}
-    />;
+    return (
+      <GameOver
+        onTryAgainClick={handleTryAgainClick}
+        currentStage={currentStage}
+      />
+    );
   }
 
   return (
     <section className={styles.container}>
       <p className={styles.question}>{currentQuestion.title}</p>
 
-      <ul
+      <div
         key={currentQuestion.id}
         className={styles.optionsList}
       >
         {currentQuestion.options.map((option, i) => (
-          <li
+          <button
+            type="button"
             key={option}
             className={clsx(
               styles.option,
               option === selectedOption && !isAnswerShown && styles.selected,
               validateOption(currentQuestion.answers, option) && isAnswerShown && styles.correct,
-              option === selectedOption && isAnswerShown && !validateOption(currentQuestion.answers, option)
+              option === selectedOption && isAnswerShown
+              && !validateOption(currentQuestion.answers, option)
               && styles.wrong,
             )}
             onClick={() => handleOptionClick(option)}
           >
-            <span className={styles.id}>{LETTERS[i]}</span>{option}
-          </li>
+            <span className={styles.id}>{LETTERS[i]}</span>
+            {option}
+          </button>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
