@@ -2,6 +2,7 @@
 
 ### Todo
 - [ ] UI enhancements
+    - [ ] Figure out a better way to use svg images ang change on state changes
     - [ ] Add dark mode
     - [ ] Add settings page
     - [ ] Add animations (GSAP or something)
